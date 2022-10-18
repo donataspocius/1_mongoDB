@@ -49,11 +49,12 @@ app.get("/api/posts", async (req, res) => {
 // GET post by id
 app.get("/api/posts/:id", async (req, res) => {
   const id = req.params.id;
-  //   const post = await Post.find({ _id: id });
-  const post = await Post.findById(id);
-
-  //   if (!post) res.json({ message: "No such post" });
-  res.json(post);
+  try {
+    const post = await Post.findById(id);
+    res.json(post);
+  } catch (error) {
+    res.json({ message: "No such post" });
+  }
 });
 
 app.listen(PORT, () => console.log("Server is running on port: " + PORT));

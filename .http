@@ -14,5 +14,5 @@ GET http://localhost:5000/api/posts
 
 
 ###
-GET http://localhost:5000/api/posts/634ee694b1c5889172b96c6f5
+GET http://localhost:5000/api/posts/634ee694b1c5889172b96c6f
 
