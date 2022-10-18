@@ -1,0 +1,18 @@
+GET http://localhost:5000/api/
+
+###
+POST http://localhost:5000/api/post
+Content-Type: application/json
+
+{
+    "title": "My SECOND AWAIT post title",
+    "body": "My first body"
+}
+
+###
+GET http://localhost:5000/api/posts
+
+
+###
+GET http://localhost:5000/api/posts/634ee694b1c5889172b96c6f5
+

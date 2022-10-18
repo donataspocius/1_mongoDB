@@ -1,0 +1,9 @@
+- FE BE ir DB paprastai hostinami atskirai (heroku, AWS...)
+
+- SQL viskas lentelėse (stulpeliai/eilutės - tables)
+- NoSQL naudoja objektus/documents
+
+- mongoose naudojamas komunikacijai mongoDB <--> Backend
+https://mongoosejs.com/docs/guide.html
+
+- mongoDB user labas
